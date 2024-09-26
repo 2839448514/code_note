@@ -1,0 +1,197 @@
+{
+  "main": {
+    "id": "ff585804cb36b6bb",
+    "type": "split",
+    "children": [
+      {
+        "id": "66988203445f011a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b8fa1c3e4c46eea3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Java/Java容器/实类/LinkedList 类.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "172cb9d9e7691387",
+    "type": "split",
+    "children": [
+      {
+        "id": "629d7c40fe3e51b8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e420f40a883c8992",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3030b19fa7821ada",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b34b1266daefded6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ea6919ac913c226a",
+    "type": "split",
+    "children": [
+      {
+        "id": "79cacc359ca6ab70",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dd9c7e44bbf751e5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Java/Java容器/实类/LinkedList 类.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "241e4ca755b7396c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Java/Java容器/实类/LinkedList 类.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "194571bf3b0cfa67",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "28d11263c6ad3d94",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Java/Java容器/实类/LinkedList 类.md"
+              }
+            }
+          },
+          {
+            "id": "bb7ed0185fc743d4",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "workspaces:管理工作区布局": false,
+      "publish:发布更改": false
+    }
+  },
+  "active": "b8fa1c3e4c46eea3",
+  "lastOpenFiles": [
+    "Java/Java容器/接口/Collection接口.md",
+    "Java/Java容器/实类/LinkedList 类.md",
+    "Java/Java容器/实类/ArrayList.md",
+    "Java/Java容器/接口/Iterator接口.md",
+    "Java/Java容器/接口/List接口.md",
+    "Java/Java容器/接口/Set接口.md",
+    "Java/Java容器/实类.md",
+    "Java/Java容器/实类",
+    "Java/Java容器/接口",
+    "Java/Java数据结构实现.md",
+    "C++/C++语言参考/表达式/值类别.md",
+    "C++/C++语言参考/表达式/内建.md",
+    "C++/C++语言参考/现代C++/现代C++.md",
+    "Java/Java容器/Java容器.md",
+    "photo/1.png",
+    "photo/2.png",
+    "photo",
+    "C++/photo",
+    "C++/C++语言参考/现代C++",
+    "C++/C++语言参考/声明/cv（const 与 volatile）类型限定符.md",
+    "().md",
+    "C++/C++语言参考/声明",
+    "临时量实质化.md",
+    "^1b3a9c.md",
+    "^内建.md",
+    "C++/C++语言参考/表达式",
+    "C++/基础.md",
+    "C++/软件开发",
+    "C++/C++语言参考",
+    "C++/photo/1.png",
+    "C++/C++第三方库/ollama/ollama.md"
+  ]
+}
