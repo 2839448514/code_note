@@ -9,14 +9,17 @@
 - `java.util.LinkedList<E>`
 
 **类结构**:
+
 ```java
 public class LinkedList<E> extends AbstractSequentialList<E> implements List<E>, Deque<E>, Cloneable, Serializable
 ```
 
 #### 1. 类型参数
+
 - **E**: 此集合中保存的元素的类型。
 
 #### 2. 继承与实现
+
 - **继承**: `LinkedList` 继承自 `AbstractSequentialList<E>`。
 - **实现的接口**: 
   - `Serializable`
@@ -29,18 +32,22 @@ public class LinkedList<E> extends AbstractSequentialList<E> implements List<E>,
   - `SequencedCollection<E>`
 
 #### 3. 特性
+
 - **双向链表**: `LinkedList` 是 `List` 和 `Deque` 接口的双向链表实现，支持从两端高效地插入和删除元素。
 - **元素允许性**: 允许所有元素的存储，包括 `null` 值。
 - **操作效率**: 所有操作的执行方式符合双向链表的预期。索引到列表的操作将根据指定的索引从列表的开始或结束进行遍历，以提高效率。
 
 #### 4. 线程安全
+
 - **非同步实现**: 此实现不是同步的。如果多个线程同时访问 `LinkedList`，且至少有一个线程对其进行了结构性修改（例如添加或删除元素），则必须在外部进行同步。
 - **推荐同步方式**: 通常通过在自然封装列表的某个对象上进行同步。如果不存在这样的对象，建议使用 `Collections.synchronizedList` 方法来包装列表，以防止意外的非同步访问，例如：
+
   ```java
   List<E> list = Collections.synchronizedList(new LinkedList<E>());
   ```
 
 #### 5. 迭代器
+
 - **快速失败迭代器**: `LinkedList` 的 `iterator` 和 `listIterator` 方法返回的迭代器具有快速失败的特性。
   - 如果在创建迭代器后对列表进行了结构性修改（除非通过迭代器自身的 `remove` 或 `add` 方法），将抛出 `ConcurrentModificationException`。
   - 这种设计确保了在面对并发修改时，迭代器能够快速失败，而不是在未来的某个不确定时间表现出不确定的行为。
@@ -50,6 +57,7 @@ public class LinkedList<E> extends AbstractSequentialList<E> implements List<E>,
 ### `LinkedList<E>` 类构造函数和方法总结
 
 #### 构造函数
+
 | 构造函数 | 描述 |
 |----------|------|
 | `LinkedList()` | 构造一个空列表。 |
@@ -102,6 +110,7 @@ public class LinkedList<E> extends AbstractSequentialList<E> implements List<E>,
 | `<T> T[]` | `toArray(T[] a)` | 返回一个数组，其中包含此列表中所有元素的顺序（从第一个到最后一个元素）；返回数组的运行时类型是指定数组的类型。 |
 
 #### 其他方法
+
 - **在 `java.util.AbstractSequentialList` 类中声明的方法**: `iterator`
 - **在 `java.util.AbstractList` 类中声明的方法**: `equals`、`hashCode`、`listIterator`、`removeRange`、`subList`
 - **在 `java.util.AbstractCollection` 类中声明的方法**: `containsAll`、`isEmpty`、`removeAll`、`retainAll`、`toString`

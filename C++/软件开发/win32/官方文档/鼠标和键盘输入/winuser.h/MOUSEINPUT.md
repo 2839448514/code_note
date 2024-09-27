@@ -1,5 +1,7 @@
 # MOUSEINPUT结构体
+
 ### **语法：**
+
 ```C++
 typedef struct tagMOUSEINPUT {
     LONG      dx;
@@ -10,7 +12,9 @@ typedef struct tagMOUSEINPUT {
     ULONG_PTR dwExtraInfo;
 } [[MOUSEINPUT]], *PMOUSEINPUT, *LPMOUSEINPUT;
 ```
+
 ### **成员：**
+
 - **dx**：鼠标的绝对位置，或自上次生成鼠标事件以来的运动量，具体取决于 **dwFlags** 成员的值。 绝对数据指定为鼠标的 x 坐标;相对数据指定为移动的像素数。
 - **dy**：鼠标的绝对位置，或自上次生成鼠标事件以来的运动量，具体取决于 **dwFlags** 成员的值。 绝对数据指定为鼠标的 y 坐标;相对数据指定为移动的像素数。
 - **mouseData**：如果 **dwFlags** 包含 **MOUSEEVENTF_WHEEL**，则 **mouseData** 指定滚轮移动量。 正值表示滚轮向前旋转（远离用户）；负值表示滚轮向后旋转（朝向用户）。 一键滚轮定义为 **WHEEL_DELTA**，即 120。
@@ -42,7 +46,9 @@ typedef struct tagMOUSEINPUT {
 
 - **time**：事件的时间戳（以毫秒为单位）。 如果此参数为 0，则系统将提供自己的时间戳。
 - **dwExtraInfo**:与鼠标事件关联的附加值。 应用程序调用 GetMessageExtraInfo 以获取此额外信息。
+
 ### 示例代码
+
 ```C++
 #include <Windows.h>
 #include <iostream>

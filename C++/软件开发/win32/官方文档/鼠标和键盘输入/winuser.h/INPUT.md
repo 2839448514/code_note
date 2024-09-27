@@ -1,4 +1,5 @@
 # INPUT 结构体
+
 ```cpp
 typedef struct tagINPUT {
     DWORD type;
@@ -9,7 +10,9 @@ typedef struct tagINPUT {
     } DUMMYUNIONNAME;
 } INPUT, *PINPUT;
 ```
+
 ### **成员：**
+
 - **type**：指定输入事件的类型。可以是以下之一：
   - `INPUT_MOUSE`：表示鼠标事件。
   - `INPUT_KEYBOARD`：表示键盘事件。
@@ -18,7 +21,9 @@ typedef struct tagINPUT {
   - **[[MOUSEINPUT]] mi**：表示鼠标事件。
   - **[[KEYBDINPUT]] ki**：表示键盘事件。
   - **[[HARDWAREINPUT]] hi**：表示硬件事件。
+
 ### 示例代码：
+
 ```C++
 #include <windows.h>
 #include <iostream>

@@ -27,10 +27,12 @@ std::cout << ollama::generate("llama3:8b", "Why is the sky blue?") << std::endl;
 要运行示例和测试用例，请使用：
 
  `构建/测试`
+
  `构建/示例`
 
  完整的 API
 --------
+
 ### Ollama 类和单例
 
 `Ollama` 类定义了与 ollama 服务器接口所需的逻辑。

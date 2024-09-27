@@ -3,6 +3,7 @@
 ### 1. **基本设置和初始化**
 
 #### `setDigitCount(int numDigits)`
+
 - **作用**：设置显示的数字位数。
 - **参数**：
   - `numDigits`：数字位数，类型为 `int`。
@@ -12,6 +13,7 @@ lcdNumber->setDigitCount(5);
 ```
 
 #### `digitCount()`
+
 - **作用**：获取当前设置的数字位数。
 - **返回值**：`int`，数字位数。
 
@@ -22,6 +24,7 @@ int numDigits = lcdNumber->digitCount();
 ### 2. **显示值**
 
 #### `display(double value)`
+
 - **作用**：设置要显示的数值。
 - **参数**：
   - `value`：要显示的数值，类型为 `double`。
@@ -31,6 +34,7 @@ lcdNumber->display(123.45);
 ```
 
 #### `display(int value)`
+
 - **作用**：设置要显示的整数值。
 - **参数**：
   - `value`：要显示的整数值，类型为 `int`。
@@ -42,6 +46,7 @@ lcdNumber->display(123);
 ### 3. **显示格式**
 
 #### `setMode(Mode mode)`
+
 - **作用**：设置显示模式（十进制或十六进制）。
 - **参数**：
   - `mode`：显示模式，类型为 `Mode`，例如 `QLCDNumber::Dec` 或 `QLCDNumber::Hex`。
@@ -53,6 +58,7 @@ lcdNumber->setMode(QLCDNumber::Hex);
 ### 4. **显示范围**
 
 #### `setSmallDecimalPoint(bool enable)`
+
 - **作用**：设置是否使用小数点。
 - **参数**：
   - `enable`：是否启用小数点，类型为 `bool`（`true` 表示启用，`false` 表示禁用）。
@@ -62,6 +68,7 @@ lcdNumber->setSmallDecimalPoint(true);
 ```
 
 #### `isSmallDecimalPoint()`
+
 - **作用**：检查是否启用小数点。
 - **返回值**：`bool`，是否启用小数点。
 
@@ -72,6 +79,7 @@ bool smallDecimalPoint = lcdNumber->isSmallDecimalPoint();
 ### 5. **显示样式**
 
 #### `setStyleSheet(const QString &styleSheet)`
+
 - **作用**：设置控件的样式表。
 - **参数**：
   - `styleSheet`：样式表字符串，类型为 `QString`。
@@ -83,6 +91,7 @@ lcdNumber->setStyleSheet("background-color: black; color: white;");
 ### 6. **显示模式**
 
 #### `setSegmentStyle(SegmentStyle style)`
+
 - **作用**：设置显示样式。
 - **参数**：
   - `style`：显示样式，类型为 `SegmentStyle`，例如 `QLCDNumber::Flat` 或 `QLCDNumber::Outline`。
@@ -92,6 +101,7 @@ lcdNumber->setSegmentStyle(QLCDNumber::Outline);
 ```
 
 #### `segmentStyle()`
+
 - **作用**：获取当前显示样式。
 - **返回值**：`SegmentStyle`，当前显示样式。
 
@@ -102,6 +112,7 @@ QLCDNumber::SegmentStyle style = lcdNumber->segmentStyle();
 ### 7. **数值变化信号**
 
 #### `valueChanged()`
+
 - **作用**：当显示的值发生变化时发出信号。
 - **返回值**：`void`，没有参数。
 
@@ -114,6 +125,7 @@ connect(lcdNumber, &QLCDNumber::valueChanged, [](double value) {
 ### 8. **显示控制**
 
 #### `setNumDigits(int numDigits)`
+
 - **作用**：设置显示的数字位数。
 - **参数**：
   - `numDigits`：数字位数，类型为 `int`。
@@ -123,6 +135,7 @@ lcdNumber->setNumDigits(5);
 ```
 
 #### `numDigits()`
+
 - **作用**：获取当前显示的数字位数。
 - **返回值**：`int`，数字位数。
 
@@ -133,6 +146,7 @@ int numDigits = lcdNumber->numDigits();
 ### 9. **自定义绘制**
 
 #### `paintEvent(QPaintEvent *event)`
+
 - **作用**：自定义绘制事件。
 - **参数**：
   - `event`：绘制事件，类型为 `QPaintEvent` 指针。
@@ -147,6 +161,7 @@ void MyLCDNumber::paintEvent(QPaintEvent *event) {
 ### 10. **控制显示位数**
 
 #### `setMinimumHeight(int height)`
+
 - **作用**：设置最小高度。
 - **参数**：
   - `height`：最小高度，类型为 `int`。
@@ -156,6 +171,7 @@ lcdNumber->setMinimumHeight(50);
 ```
 
 #### `setMinimumWidth(int width)`
+
 - **作用**：设置最小宽度。
 - **参数**：
   - `width`：最小宽度，类型为 `int`。
@@ -169,6 +185,7 @@ lcdNumber->setMinimumWidth(100);
 ### 11. **文本对齐**
 
 #### `setAlignment(Qt::Alignment alignment)`
+
 - **作用**：设置显示文本的对齐方式。
 - **参数**：
   - `alignment`：对齐方式，类型为 `Qt::Alignment`（例如 `Qt::AlignCenter`）。
@@ -178,6 +195,7 @@ lcdNumber->setAlignment(Qt::AlignCenter);
 ```
 
 #### `alignment()`
+
 - **作用**：获取当前文本的对齐方式。
 - **返回值**：`Qt::Alignment`，当前对齐方式。
 
@@ -188,6 +206,7 @@ Qt::Alignment alignment = lcdNumber->alignment();
 ### 12. **显示模式控制**
 
 #### `setSegmentStyle(QLCDNumber::SegmentStyle style)`
+
 - **作用**：设置 LCD 数字的段样式。
 - **参数**：
   - `style`：段样式，类型为 `QLCDNumber::SegmentStyle`（例如 `QLCDNumber::Flat`、`QLCDNumber::Outline`）。
@@ -197,6 +216,7 @@ lcdNumber->setSegmentStyle(QLCDNumber::Flat);
 ```
 
 #### `segmentStyle()`
+
 - **作用**：获取当前的段样式。
 - **返回值**：`QLCDNumber::SegmentStyle`，当前的段样式。
 
@@ -207,6 +227,7 @@ QLCDNumber::SegmentStyle style = lcdNumber->segmentStyle();
 ### 13. **显示小数**
 
 #### `setSmallDecimalPoint(bool enable)`
+
 - **作用**：设置是否使用小数点。
 - **参数**：
   - `enable`：是否启用小数点，类型为 `bool`（`true` 表示启用，`false` 表示禁用）。
@@ -216,6 +237,7 @@ lcdNumber->setSmallDecimalPoint(true);
 ```
 
 #### `isSmallDecimalPoint()`
+
 - **作用**：检查是否启用小数点。
 - **返回值**：`bool`，是否启用小数点。
 
@@ -226,6 +248,7 @@ bool enabled = lcdNumber->isSmallDecimalPoint();
 ### 14. **样式表设置**
 
 #### `setStyleSheet(const QString &styleSheet)`
+
 - **作用**：设置控件的样式表。
 - **参数**：
   - `styleSheet`：样式表字符串，类型为 `QString`。
@@ -237,6 +260,7 @@ lcdNumber->setStyleSheet("background-color: black; color: white;");
 ### 15. **文本格式**
 
 #### `setTextFormat(Qt::TextFormat format)`
+
 - **作用**：设置文本的格式。
 - **参数**：
   - `format`：文本格式，类型为 `Qt::TextFormat`（例如 `Qt::PlainText`、`Qt::RichText`）。
@@ -246,6 +270,7 @@ lcdNumber->setTextFormat(Qt::PlainText);
 ```
 
 #### `textFormat()`
+
 - **作用**：获取当前的文本格式。
 - **返回值**：`Qt::TextFormat`，当前的文本格式。
 
@@ -256,6 +281,7 @@ Qt::TextFormat format = lcdNumber->textFormat();
 ### 16. **刷新**
 
 #### `update()`
+
 - **作用**：强制控件重绘。
 - **返回值**：`void`，无返回值。
 
@@ -266,6 +292,7 @@ lcdNumber->update();
 ### 17. **自定义绘制**
 
 #### `paintEvent(QPaintEvent *event)`
+
 - **作用**：自定义绘制事件，覆盖父类的绘制方法。
 - **参数**：
   - `event`：绘制事件，类型为 `QPaintEvent` 指针。
@@ -280,6 +307,7 @@ void MyLCDNumber::paintEvent(QPaintEvent *event) {
 ### 18. **信号和槽**
 
 #### `valueChanged()`
+
 - **作用**：当显示的值发生变化时发出信号。
 - **返回值**：`void`，没有参数。需要在类定义中声明为 `signals`。
 
@@ -288,4 +316,3 @@ connect(lcdNumber, &QLCDNumber::valueChanged, [](double value) {
     qDebug() << "Value changed to:" << value;
 });
 ```
-

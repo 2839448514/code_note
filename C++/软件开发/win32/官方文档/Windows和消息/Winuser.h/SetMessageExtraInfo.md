@@ -1,17 +1,27 @@
 # SetMessageExtraInfo 函数 (winuser.h)
+
 ## 语法
-```
+
+```c++
 LPARAM SetMessageExtraInfo(
   [in] LPARAM lParam
 );
 ```
+
 ## 参数
+
 `[in] lParam`
+
 类型：LPARAM：要与当前线程关联的值。
+
 ## 返回值
+
 类型：LPARAM
+
 返回值是与当前线程关联的上一个值。
+
 ## 示例代码
+
 ```C++
 #include <Windows.h>
 #include <iostream>

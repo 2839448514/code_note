@@ -1,5 +1,7 @@
 # KEYBDINPUT 结构 
+
 ## 语法
+
 ```C++
 typedef struct tagKEYBDINPUT {
   WORD      wVk;
@@ -9,7 +11,9 @@ typedef struct tagKEYBDINPUT {
   ULONG_PTR dwExtraInfo;
 } KEYBDINPUT, *PKEYBDINPUT, *LPKEYBDINPUT;
 ```
+
 ## 成员
+
 - **wVk**：[[虚拟密钥代码]]。 代码必须是 1 到 254 范围内的值。 如果 **dwFlags** 成员指定 **KEYEVENTF_UNICODE**， **则 wVk** 必须为 0。
 - **wScan**：密钥的硬件扫描代码。 如果 **dwFlags** 指定 **KEYEVENTF_UNICODE**， **则 wScan** 将指定一个 Unicode 字符，该字符将发送到前台应用程序。
 - **dwFlags**：指定击键的各个方面。 此成员可以是以下值的某些组合。
@@ -23,6 +27,7 @@ typedef struct tagKEYBDINPUT {
 
 - **time**：事件的时间戳（以毫秒为单位）。 如果此参数为零，则系统将提供自己的时间戳。
 - **dwExtraInfo**：与击键关联的附加值。 使用 [GetMessageExtraInfo](https://learn.microsoft.com/zh-cn/windows/desktop/api/winuser/nf-winuser-getmessageextrainfo) 函数获取此信息。
+
 ## 注解
 
 **INPUT_KEYBOARD** 支持非键板输入方法（如手写识别或语音识别），就像它是使用 **KEYEVENTF_UNICODE** 标志输入文本一样。 如果指定[](https://learn.microsoft.com/zh-cn/windows/desktop/inputdev/wm-keyup)**了**[KEYEVENTF_UNICODE，SendInput](https://learn.microsoft.com/zh-cn/windows/desktop/api/winuser/nf-winuser-sendinput) 会将[WM_KEYDOWN](https://learn.microsoft.com/zh-cn/windows/desktop/inputdev/wm-keydown)或WM_KEYUP消息发送到 _wParam_ 等于**VK_PACKET**的前景线程的消息队列。 [GetMessage](https://learn.microsoft.com/zh-cn/windows/desktop/api/winuser/nf-winuser-getmessage) 或 [PeekMessage](https://learn.microsoft.com/zh-cn/windows/desktop/api/winuser/nf-winuser-peekmessagea) 获取此消息后，将消息传递给 [TranslateMessage](https://learn.microsoft.com/zh-cn/windows/desktop/api/winuser/nf-winuser-translatemessage) 会发布[WM_CHAR](https://learn.microsoft.com/zh-cn/windows/desktop/inputdev/wm-char)消息，其中包含 **wScan** 最初指定的 Unicode 字符。 如果此 Unicode 字符被发布到 ANSI 窗口，则会自动转换为相应的 ANSI 值。

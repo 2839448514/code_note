@@ -17,31 +17,40 @@
    - 例如：`System.out.printf("%d %s\n", 123, "Hello");` 会输出 "123 Hello" 并换行。
 
 ### 具体示例：
+
 - 使用 `print`：
+
   ```java
   System.out.print("Hello");
   System.out.print(" World");
   ```
+
   输出：`Hello World`（没有换行）
 
 - 使用 `println`：
+
   ```java
   System.out.println("Hello");
   System.out.println("World");
   ```
+
   输出：
-  ```
+
+  ```c++
   Hello
   World
   ```
 
 - 使用 `printf`：
+
   ```java
   System.out.printf("Hello %s\n", "World");
   System.out.printf("Number: %d\n", 123);
   ```
+
   输出：
-  ```
+
+  ```c++
   Hello World
   Number: 123
   ```

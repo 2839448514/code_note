@@ -3,6 +3,7 @@
 ### 1. **基本设置**
 
 #### `setDate(const QDate &date)`
+
 - **作用**：设置当前日期。
 - **参数**：
   - `date`：要设置的日期，类型为 `QDate`。
@@ -12,6 +13,7 @@ dateEdit->setDate(QDate(2024, 7, 23)); // 设置日期为 2024年7月23日
 ```
 
 #### `date()`
+
 - **作用**：获取当前日期。
 - **返回值**：`QDate`，当前的日期。
 
@@ -22,6 +24,7 @@ QDate currentDate = dateEdit->date();
 ### 2. **范围设置**
 
 #### `setMinimumDate(const QDate &date)`
+
 - **作用**：设置允许的最早日期。
 - **参数**：
   - `date`：最早日期，类型为 `QDate`。
@@ -31,6 +34,7 @@ dateEdit->setMinimumDate(QDate(2000, 1, 1)); // 设置最早日期为 2000年1�
 ```
 
 #### `minimumDate()`
+
 - **作用**：获取允许的最早日期。
 - **返回值**：`QDate`，最早日期。
 
@@ -39,6 +43,7 @@ QDate minDate = dateEdit->minimumDate();
 ```
 
 #### `setMaximumDate(const QDate &date)`
+
 - **作用**：设置允许的最晚日期。
 - **参数**：
   - `date`：最晚日期，类型为 `QDate`。
@@ -48,6 +53,7 @@ dateEdit->setMaximumDate(QDate(2100, 12, 31)); // 设置最晚日期为 2100年1
 ```
 
 #### `maximumDate()`
+
 - **作用**：获取允许的最晚日期。
 - **返回值**：`QDate`，最晚日期。
 
@@ -58,6 +64,7 @@ QDate maxDate = dateEdit->maximumDate();
 ### 3. **显示和格式**
 
 #### `setDisplayFormat(const QString &format)`
+
 - **作用**：设置日期的显示格式。
 - **参数**：
   - `format`：日期格式字符串，类型为 `QString`。常用的格式包括 `"yyyy-MM-dd"`、`"MM/dd/yyyy"` 等。
@@ -67,6 +74,7 @@ dateEdit->setDisplayFormat("yyyy-MM-dd");
 ```
 
 #### `displayFormat()`
+
 - **作用**：获取当前的日期显示格式。
 - **返回值**：`QString`，当前的日期格式。
 
@@ -77,6 +85,7 @@ QString format = dateEdit->displayFormat();
 ### 4. **编辑状态**
 
 #### `setReadOnly(bool readOnly)`
+
 - **作用**：设置控件是否只读。
 - **参数**：
   - `readOnly`：是否只读，类型为 `bool`（`true` 表示只读，`false` 表示可编辑）。
@@ -86,6 +95,7 @@ dateEdit->setReadOnly(true);
 ```
 
 #### `isReadOnly()`
+
 - **作用**：检查控件是否为只读状态。
 - **返回值**：`bool`，如果是只读返回 `true`，否则返回 `false`。
 
@@ -96,6 +106,7 @@ bool readOnly = dateEdit->isReadOnly();
 ### 5. **信号和槽**
 
 #### `dateChanged(const QDate &date)`
+
 - **作用**：当日期发生变化时发射的信号。
 - **参数**：
   - `date`：新日期，类型为 `QDate`。
@@ -109,6 +120,7 @@ connect(dateEdit, &QDateEdit::dateChanged, [](const QDate &date){
 ### 6. **样式设置**
 
 #### `setStyleSheet(const QString &styleSheet)`
+
 - **作用**：设置控件的样式表，允许自定义控件的外观。
 - **参数**：
   - `styleSheet`：样式表字符串，类型为 `QString`。
@@ -120,6 +132,7 @@ dateEdit->setStyleSheet("QDateEdit { color: green; }");
 ### 7. **焦点和光标**
 
 #### `setFocusPolicy(Qt::FocusPolicy policy)`
+
 - **作用**：设置控件的焦点策略。
 - **参数**：
   - `policy`：焦点策略，类型为 `Qt::FocusPolicy`（例如 `Qt::StrongFocus`）。
@@ -129,6 +142,7 @@ dateEdit->setFocusPolicy(Qt::StrongFocus);
 ```
 
 #### `focusPolicy()`
+
 - **作用**：获取控件的焦点策略。
 - **返回值**：`Qt::FocusPolicy`，当前的焦点策略。
 
@@ -139,6 +153,7 @@ Qt::FocusPolicy policy = dateEdit->focusPolicy();
 ### 8. **自定义行为**
 
 #### `setDateFromText(const QString &text)`
+
 - **作用**：从文本中解析日期并设置。
 - **参数**：
   - `text`：日期的文本表示，类型为 `QString`。
@@ -148,6 +163,7 @@ dateEdit->setDateFromText("2024-07-23");
 ```
 
 #### `textFromDate(const QDate &date)`
+
 - **作用**：将日期转换为文本。
 - **参数**：
   - `date`：要转换的日期，类型为 `QDate`。
@@ -160,6 +176,7 @@ QString dateText = dateEdit->textFromDate(QDate(2024, 7, 23));
 ### 9. **输入掩码**
 
 #### `setInputMask(const QString &inputMask)`
+
 - **作用**：设置输入掩码，限制用户输入的日期格式。
 - **参数**：
   - `inputMask`：输入掩码，类型为 `QString`（例如 `"0000-00-00"`）。
@@ -169,6 +186,7 @@ dateEdit->setInputMask("0000-00-00");
 ```
 
 #### `inputMask()`
+
 - **作用**：获取当前的输入掩码。
 - **返回值**：`QString`，当前的输入掩码。
 
@@ -179,6 +197,7 @@ QString mask = dateEdit->inputMask();
 ### 10. **步进按钮的定制**
 
 #### `setButtonSymbols(QAbstractSpinBox::ButtonSymbols symbols)`
+
 - **作用**：设置步进按钮的样式（对于 `QDateEdit`，通常用于调整日期的按钮样式）。
 - **参数**：
   - `symbols`：按钮样式，类型为 `QAbstractSpinBox::ButtonSymbols`（例如 `QAbstractSpinBox::UpDownArrows`）。
@@ -188,6 +207,7 @@ dateEdit->setButtonSymbols(QAbstractSpinBox::UpDownArrows);
 ```
 
 #### `buttonSymbols()`
+
 - **作用**：获取步进按钮的样式。
 - **返回值**：`QAbstractSpinBox::ButtonSymbols`，当前的按钮样式。
 
@@ -202,6 +222,7 @@ QAbstractSpinBox::ButtonSymbols symbols = dateEdit->buttonSymbols();
 ### 12. **特殊值**
 
 #### `setSpecialValueText(const QString &text)`
+
 - **作用**：设置特殊值的显示文本，例如当日期设置无效时的显示内容。
 - **参数**：
   - `text`：特殊值文本，类型为 `QString`。
@@ -211,6 +232,7 @@ dateEdit->setSpecialValueText("No Date");
 ```
 
 #### `specialValueText()`
+
 - **作用**：获取特殊值的显示文本。
 - **返回值**：`QString`，特殊值文本。
 
@@ -221,6 +243,7 @@ QString specialText = dateEdit->specialValueText();
 ### 13. **用户交互**
 
 #### `setAutoFillBackground(bool autoFill)`
+
 - **作用**：设置控件是否自动填充背景。
 - **参数**：
   - `autoFill`：是否自动填充，类型为 `bool`（`true` 表示自动填充，`false` 表示不填充）。
@@ -232,6 +255,7 @@ dateEdit->setAutoFillBackground(true);
 ### 14. **事件处理**
 
 #### `installEventFilter(QObject *filter)`
+
 - **作用**：安装事件过滤器，用于处理控件的事件。
 - **参数**：
   - `filter`：事件过滤器对象，类型为 `QObject*`。
@@ -245,6 +269,7 @@ dateEdit->installEventFilter(myEventFilter);
 ### 15. **日期验证**
 
 #### `setCalendarPopup(bool enable)`
+
 - **作用**：启用或禁用日期选择的弹出日历。
 - **参数**：
   - `enable`：是否启用弹出日历，类型为 `bool`（`true` 表示启用，`false` 表示禁用）。
@@ -254,6 +279,7 @@ dateEdit->setCalendarPopup(true); // 启用弹出日历
 ```
 
 #### `calendarPopup()`
+
 - **作用**：检查是否启用了弹出日历。
 - **返回值**：`bool`，如果启用了弹出日历返回 `true`，否则返回 `false`。
 
@@ -264,6 +290,7 @@ bool popupEnabled = dateEdit->calendarPopup();
 ### 16. **特殊值处理**
 
 #### `setSpecialValue(const QDate &date)`
+
 - **作用**：设置特殊值，当控件显示这个特殊值时，用于表示“无日期”或其他特殊含义。
 - **参数**：
   - `date`：特殊值日期，类型为 `QDate`。
@@ -273,6 +300,7 @@ dateEdit->setSpecialValue(QDate()); // 设置特殊值为空日期
 ```
 
 #### `specialValue()`
+
 - **作用**：获取特殊值日期。
 - **返回值**：`QDate`，特殊值日期。
 
@@ -283,6 +311,7 @@ QDate specialDate = dateEdit->specialValue();
 ### 17. **编辑状态**
 
 #### `setWrapping(bool wrap)`
+
 - **作用**：设置是否允许在日期选择中进行循环（即从最小日期循环到最大日期，反之亦然）。
 - **参数**：
   - `wrap`：是否允许循环，类型为 `bool`（`true` 表示允许循环，`false` 表示不允许）。
@@ -292,6 +321,7 @@ dateEdit->setWrapping(true);
 ```
 
 #### `wrapping()`
+
 - **作用**：检查是否允许日期选择循环。
 - **返回值**：`bool`，如果允许循环返回 `true`，否则返回 `false`。
 
@@ -302,6 +332,7 @@ bool wrap = dateEdit->wrapping();
 ### 18. **自定义编辑行为**
 
 #### `setDateRange(const QDate &minDate, const QDate &maxDate)`
+
 - **作用**：一次性设置日期的最小值和最大值。
 - **参数**：
   - `minDate`：最小日期，类型为 `QDate`。
@@ -314,6 +345,7 @@ dateEdit->setDateRange(QDate(2000, 1, 1), QDate(2100, 12, 31));
 ### 19. **日期调整**
 
 #### `setDateEditPolicy(Qt::DateEditPolicy policy)`
+
 - **作用**：设置日期编辑策略。
 - **参数**：
   - `policy`：日期编辑策略，类型为 `Qt::DateEditPolicy`（例如 `Qt::NoDateEdit`）。
@@ -325,6 +357,7 @@ dateEdit->setDateEditPolicy(Qt::NoDateEdit);
 ### 20. **背景与前景色**
 
 #### `setPalette(const QPalette &palette)`
+
 - **作用**：设置控件的调色板，定义控件的背景色、前景色等。
 - **参数**：
   - `palette`：调色板对象，类型为 `QPalette`。
@@ -338,6 +371,7 @@ dateEdit->setPalette(palette);
 ### 21. **子控件访问**
 
 #### `calendarWidget()`
+
 - **作用**：获取与 `QDateEdit` 关联的日历控件（如果启用了弹出日历）。
 - **返回值**：`QCalendarWidget*`，关联的日历控件指针。
 
@@ -348,6 +382,7 @@ QCalendarWidget* calendar = dateEdit->calendarWidget();
 ### 22. **日期格式化**
 
 #### `setLocale(const QLocale &locale)`
+
 - **作用**：设置日期控件的本地化信息。
 - **参数**：
   - `locale`：本地化信息，类型为 `QLocale`。
@@ -357,6 +392,7 @@ dateEdit->setLocale(QLocale::French);
 ```
 
 #### `locale()`
+
 - **作用**：获取当前的本地化信息。
 - **返回值**：`QLocale`，当前的本地化信息。
 
@@ -367,6 +403,7 @@ QLocale locale = dateEdit->locale();
 ### 23. **工具提示**
 
 #### `setToolTip(const QString &toolTip)`
+
 - **作用**：设置控件的工具提示。
 - **参数**：
   - `toolTip`：工具提示文本，类型为 `QString`。
@@ -376,6 +413,7 @@ dateEdit->setToolTip("Select a date");
 ```
 
 #### `toolTip()`
+
 - **作用**：获取控件的工具提示。
 - **返回值**：`QString`，当前的工具提示文本。
 
@@ -386,6 +424,7 @@ QString toolTipText = dateEdit->toolTip();
 ### 24. **日历界面**
 
 #### `setCalendarWidget(QCalendarWidget *calendarWidget)`
+
 - **作用**：设置自定义的日历控件作为 `QDateEdit` 的日历弹出窗口。
 - **参数**：
   - `calendarWidget`：自定义的日历控件指针，类型为 `QCalendarWidget*`。
@@ -398,6 +437,7 @@ dateEdit->setCalendarWidget(customCalendar);
 ### 25. **自定义背景**
 
 #### `setAutoFillBackground(bool autoFill)`
+
 - **作用**：设置控件是否自动填充背景。
 - **参数**：
   - `autoFill`：是否自动填充，类型为 `bool`（`true` 表示自动填充，`false` 表示不填充）。
@@ -405,4 +445,3 @@ dateEdit->setCalendarWidget(customCalendar);
 ```cpp
 dateEdit->setAutoFillBackground(true);
 ```
-

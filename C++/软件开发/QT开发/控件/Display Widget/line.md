@@ -3,6 +3,7 @@
 ### 1. **构造函数**
 
 #### `QLine()`
+
 - **作用**：默认构造函数，创建一个无效的 `QLine` 对象（坐标点默认为 (0,0)）。
 - **返回值**：`QLine` 对象。
 
@@ -11,6 +12,7 @@ QLine line;
 ```
 
 #### `QLine(int x1, int y1, int x2, int y2)`
+
 - **作用**：使用两个点的坐标构造一个 `QLine` 对象。
 - **参数**：
   - `x1`, `y1`：起点坐标。
@@ -22,6 +24,7 @@ QLine line(10, 20, 30, 40);
 ```
 
 #### `QLine(const QPoint &p1, const QPoint &p2)`
+
 - **作用**：使用两个 `QPoint` 对象构造一个 `QLine` 对象。
 - **参数**：
   - `p1`：起点。
@@ -37,6 +40,7 @@ QLine line(p1, p2);
 ### 2. **获取和设置点**
 
 #### `QPoint p1() const`
+
 - **作用**：获取线段的起点。
 - **返回值**：`QPoint`，起点坐标。
 
@@ -45,6 +49,7 @@ QPoint startPoint = line.p1();
 ```
 
 #### `QPoint p2() const`
+
 - **作用**：获取线段的终点。
 - **返回值**：`QPoint`，终点坐标。
 
@@ -53,6 +58,7 @@ QPoint endPoint = line.p2();
 ```
 
 #### `void setP1(const QPoint &point)`
+
 - **作用**：设置线段的起点。
 - **参数**：
   - `point`：起点坐标。
@@ -62,6 +68,7 @@ line.setP1(QPoint(50, 60));
 ```
 
 #### `void setP2(const QPoint &point)`
+
 - **作用**：设置线段的终点。
 - **参数**：
   - `point`：终点坐标。
@@ -73,6 +80,7 @@ line.setP2(QPoint(70, 80));
 ### 3. **获取和设置坐标**
 
 #### `int x1() const`
+
 - **作用**：获取线段起点的 x 坐标。
 - **返回值**：`int`，起点 x 坐标。
 
@@ -81,6 +89,7 @@ int x1 = line.x1();
 ```
 
 #### `int y1() const`
+
 - **作用**：获取线段起点的 y 坐标。
 - **返回值**：`int`，起点 y 坐标。
 
@@ -89,6 +98,7 @@ int y1 = line.y1();
 ```
 
 #### `int x2() const`
+
 - **作用**：获取线段终点的 x 坐标。
 - **返回值**：`int`，终点 x 坐标。
 
@@ -97,6 +107,7 @@ int x2 = line.x2();
 ```
 
 #### `int y2() const`
+
 - **作用**：获取线段终点的 y 坐标。
 - **返回值**：`int`，终点 y 坐标。
 
@@ -105,6 +116,7 @@ int y2 = line.y2();
 ```
 
 #### `void setPoints(int x1, int y1, int x2, int y2)`
+
 - **作用**：设置线段的起点和终点坐标。
 - **参数**：
   - `x1`, `y1`：起点坐标。
@@ -117,6 +129,7 @@ line.setPoints(10, 20, 30, 40);
 ### 4. **线段属性**
 
 #### `int length() const`
+
 - **作用**：计算线段的长度（不包括宽度）。
 - **返回值**：`int`，线段长度。
 
@@ -125,6 +138,7 @@ int len = line.length();
 ```
 
 #### `int dx() const`
+
 - **作用**：计算线段在 x 方向上的长度。
 - **返回值**：`int`，x 方向长度。
 
@@ -133,6 +147,7 @@ int deltaX = line.dx();
 ```
 
 #### `int dy() const`
+
 - **作用**：计算线段在 y 方向上的长度。
 - **返回值**：`int`，y 方向长度。
 
@@ -143,6 +158,7 @@ int deltaY = line.dy();
 ### 5. **计算和转换**
 
 #### `QLine translated(int dx, int dy) const`
+
 - **作用**：返回平移后的 `QLine` 对象。
 - **参数**：
   - `dx`：x 方向的平移量。
@@ -154,6 +170,7 @@ QLine translatedLine = line.translated(10, 20);
 ```
 
 #### `QLine translated(const QPoint &offset) const`
+
 - **作用**：返回平移后的 `QLine` 对象。
 - **参数**：
   - `offset`：平移量，类型为 `QPoint`。
@@ -165,6 +182,7 @@ QLine translatedLine = line.translated(offset);
 ```
 
 #### `QLine normal() const`
+
 - **作用**：返回线段的法线线段。
 - **返回值**：`QLine`，法线线段。
 
@@ -175,6 +193,7 @@ QLine normalLine = line.normal();
 ### 6. **线段比较**
 
 #### `bool operator==(const QLine &other) const`
+
 - **作用**：比较两个线段是否相等。
 - **参数**：
   - `other`：另一个 `QLine` 对象。
@@ -185,6 +204,7 @@ bool isEqual = (line == anotherLine);
 ```
 
 #### `bool operator!=(const QLine &other) const`
+
 - **作用**：比较两个线段是否不相等。
 - **参数**：
   - `other`：另一个 `QLine` 对象。
@@ -197,6 +217,7 @@ bool isNotEqual = (line != anotherLine);
 ### 7. **绘制**
 
 #### `void draw(QPainter *painter) const`
+
 - **作用**：使用 `QPainter` 绘制线段。
 - **参数**：
   - `painter`：`QPainter` 对象，用于绘制。
@@ -209,6 +230,7 @@ painter.drawLine(line);
 ### 8. **获取线段角度**
 
 #### `qreal angle() const`
+
 - **作用**：获取线段与 x 轴的夹角（单位为度）。
 - **返回值**：`qreal`，夹角。
 

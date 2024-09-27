@@ -9,7 +9,9 @@
 | `cout`<br>`wcout`            | 写入标准 C 输出流 stdout（全局对象）                               |
 | `cerr`<br>`wcerr`            | 写入标准 C 错误流 stderr，无缓冲（全局对象）                           |
 | `clogw`<br>`clog`            | 写入标准 C 错误流 stderr（全局对象）                               |
+
 ### 概要
+
 ```C++
 #include <ios>
 #include <streambuf>
@@ -28,4 +30,3 @@ namespace std {
   extern wostream wclog;
 }
 ```
-

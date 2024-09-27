@@ -326,4 +326,3 @@ decltype(del) *pd = get_deleter<decltype(del)>(p);
 ```
 
 ## 更复杂的shared_ptr操作
-

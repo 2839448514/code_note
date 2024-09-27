@@ -25,11 +25,9 @@
     
 - 通常通过在自然封装列表的某个对象上同步来实现这一点。如果不存在这样的对象，则应在创建时使用 `Collections.synchronizedList` 方法“包装”列表：
 
-
 ```java
     List list = Collections.synchronizedList(new ArrayList<>(...));
 ```
-
 
 #### 迭代器
 
@@ -50,6 +48,7 @@
 1. **ArrayList()**
    - **描述**：构造一个具有初始容量为十的空列表。
    - **示例**：
+
      ```java
      ArrayList<String> list = new ArrayList<>();
      ```
@@ -59,6 +58,7 @@
    - **参数**：
      - `initialCapacity` - 列表的初始容量。
    - **示例**：
+
      ```java
      ArrayList<String> list = new ArrayList<>(50);
      ```
@@ -68,6 +68,7 @@
    - **参数**：
      - `c` - 包含要添加到列表中的元素的集合。
    - **示例**：
+
      ```java
      List<String> originalList = Arrays.asList("A", "B", "C");
      ArrayList<String> list = new ArrayList<>(originalList);

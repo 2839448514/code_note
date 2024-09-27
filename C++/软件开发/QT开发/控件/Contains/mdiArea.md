@@ -3,6 +3,7 @@
 ### 基本构造与销毁
 
 #### `QMDIArea(QWidget *parent = nullptr)`
+
 - **作用**：构造一个 `QMDIArea` 对象。
 - **参数**：
   - `parent`：父控件，类型为 `QWidget*`。默认为 `nullptr`。
@@ -15,6 +16,7 @@ QMDIArea *mdiArea = new QMDIArea(parentWidget);
 ### 子窗口管理
 
 #### `QMdiSubWindow *addSubWindow(QWidget *widget, Qt::WindowFlags windowFlags = Qt::WindowFlags())`
+
 - **作用**：将一个子控件添加为子窗口。
 - **参数**：
   - `widget`：要添加的子控件，类型为 `QWidget*`。
@@ -26,6 +28,7 @@ QMdiSubWindow *subWindow = mdiArea->addSubWindow(myWidget);
 ```
 
 #### `void removeSubWindow(QWidget *widget)`
+
 - **作用**：从 MDI 区域中移除一个子窗口。
 - **参数**：
   - `widget`：要移除的子控件，类型为 `QWidget*`。
@@ -36,6 +39,7 @@ mdiArea->removeSubWindow(myWidget);
 ```
 
 #### `void setActiveSubWindow(QMdiSubWindow *window)`
+
 - **作用**：设置当前活动的子窗口。
 - **参数**：
   - `window`：要设置为活动窗口的子窗口，类型为 `QMdiSubWindow*`。
@@ -46,6 +50,7 @@ mdiArea->setActiveSubWindow(subWindow);
 ```
 
 #### `QMdiSubWindow *activeSubWindow() const`
+
 - **作用**：获取当前活动的子窗口。
 - **返回值**：`QMdiSubWindow*`，当前活动的子窗口。
 
@@ -56,6 +61,7 @@ QMdiSubWindow *activeWindow = mdiArea->activeSubWindow();
 ### 子窗口的排列与布局
 
 #### `void tileSubWindows()`
+
 - **作用**：将所有子窗口平铺显示。
 - **参数**：无。
 - **返回值**：`void`，无返回值。
@@ -65,6 +71,7 @@ mdiArea->tileSubWindows();
 ```
 
 #### `void cascadeSubWindows()`
+
 - **作用**：将所有子窗口以层叠方式显示。
 - **参数**：无。
 - **返回值**：`void`，无返回值。
@@ -74,6 +81,7 @@ mdiArea->cascadeSubWindows();
 ```
 
 #### `void setLayoutMode(QMdiArea::LayoutMode mode)`
+
 - **作用**：设置子窗口的布局模式。
 - **参数**：
   - `mode`：布局模式，类型为 `QMdiArea::LayoutMode`。
@@ -84,6 +92,7 @@ mdiArea->setLayoutMode(QMdiArea::CascadeView);
 ```
 
 #### `QMdiArea::LayoutMode layoutMode() const`
+
 - **作用**：获取子窗口的布局模式。
 - **返回值**：`QMdiArea::LayoutMode`，当前布局模式。
 
@@ -94,6 +103,7 @@ QMdiArea::LayoutMode mode = mdiArea->layoutMode();
 ### 窗口的浮动与停靠
 
 #### `void setSubWindowList(const QList<QMdiSubWindow*> &list)`
+
 - **作用**：设置子窗口的列表。
 - **参数**：
   - `list`：子窗口列表，类型为 `QList<QMdiSubWindow*>`。
@@ -104,6 +114,7 @@ mdiArea->setSubWindowList(subWindowList);
 ```
 
 #### `QList<QMdiSubWindow*> subWindowList() const`
+
 - **作用**：获取当前的子窗口列表。
 - **返回值**：`QList<QMdiSubWindow*>`，子窗口列表。
 
@@ -114,6 +125,7 @@ QList<QMdiSubWindow*> list = mdiArea->subWindowList();
 ### 控件的状态与属性
 
 #### `void setViewMode(QMdiArea::ViewMode mode)`
+
 - **作用**：设置视图模式，例如是否显示窗格。
 - **参数**：
   - `mode`：视图模式，类型为 `QMdiArea::ViewMode`。
@@ -124,6 +136,7 @@ mdiArea->setViewMode(QMdiArea::TabbedView);
 ```
 
 #### `QMdiArea::ViewMode viewMode() const`
+
 - **作用**：获取视图模式。
 - **返回值**：`QMdiArea::ViewMode`，当前视图模式。
 
@@ -132,6 +145,7 @@ QMdiArea::ViewMode mode = mdiArea->viewMode();
 ```
 
 #### `void setOption(QMdiArea::AreaOption option, bool on = true)`
+
 - **作用**：设置 MDI 区域的选项。
 - **参数**：
   - `option`：选项，类型为 `QMdiArea::AreaOption`。
@@ -143,6 +157,7 @@ mdiArea->setOption(QMdiArea::DontMaximizeSubWindowOnActivation, true);
 ```
 
 #### `bool testOption(QMdiArea::AreaOption option) const`
+
 - **作用**：测试 MDI 区域是否具有指定选项。
 - **参数**：
   - `option`：选项，类型为 `QMdiArea::AreaOption`。
@@ -155,6 +170,7 @@ bool hasOption = mdiArea->testOption(QMdiArea::DontMaximizeSubWindowOnActivation
 ### 事件处理
 
 #### `void closeEvent(QCloseEvent *event)`
+
 - **作用**：处理窗口关闭事件。
 - **参数**：
   - `event`：关闭事件，类型为 `QCloseEvent*`。
@@ -168,6 +184,7 @@ void MyMdiArea::closeEvent(QCloseEvent *event) {
 ```
 
 #### `void resizeEvent(QResizeEvent *event)`
+
 - **作用**：处理控件的调整大小事件。
 - **参数**：
   - `event`：调整大小事件，类型为 `QResizeEvent*`。
@@ -183,6 +200,7 @@ void MyMdiArea::resizeEvent(QResizeEvent *event) {
 ### 子窗口的状态
 
 #### `bool isMaximized() const`
+
 - **作用**：检查 MDI 区域是否已最大化。
 - **返回值**：`bool`，如果已最大化则返回 `true`，否则返回 `false`。
 
@@ -193,6 +211,7 @@ bool maximized = mdiArea->isMaximized();
 ### 常用操作
 
 #### `void activateNextSubWindow()`
+
 - **作用**：激活下一个子窗口。
 - **参数**：无。
 - **返回值**：`void`，无返回值。
@@ -202,6 +221,7 @@ mdiArea->activateNextSubWindow();
 ```
 
 #### `void activatePreviousSubWindow()`
+
 - **作用**：激活上一个子窗口。
 - **参数**：无。
 - **返回值**：`void`，无返回值。

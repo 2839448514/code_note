@@ -18,7 +18,9 @@
 | **get_id(C++11)**                                                                                 | **返回当前线程  的线程 ID（函数）**           |
 | **sleep_for（C++11）**                                                                              | **在指定的持续时间  内停止当前线程的执行（函数）**     |
 | **sleep_until（C++11）**                                                                            | **停止当前线程的执行，直到指定的时间点  （函数）**     |
+
 ### 概要
+
 ```C++
 #include <compare>
 namespace std {
@@ -36,7 +38,9 @@ namespace std {
   }
 }
 ```
+
 #### Class std::thread
+
 ```C++
 namespace std {
   class thread {
@@ -68,7 +72,9 @@ namespace std {
 }
 
 ```
+
 #### Class std::jthread
+
 ```C++
 namespace std {
   class jthread {
@@ -111,7 +117,9 @@ namespace std {
 }
 
 ```
+
 #### Class std::thread::id
+
 ```C++
 namespace std {
   class thread::id {

@@ -23,8 +23,11 @@
 | `gmtime`              | 将自纪元以来的时间转换为以世界协调时间  表示的日历时间（函数）    |
 | `localtime`           | 将自纪元以来的时间转换为以本地时间  表示的日历时间（函数）      |
 | `mktime`              | 将日历时间转换为自纪元 以来的时间（函数）               |
+
 ## 个别函数介绍
+
 ### 1. `CLOCKS_PER_SEC`
+
 ```C++
 clock_t start = clock(); // 记录开始时间
 cout << CLOCKS_PER_SEC << endl;  //1000
@@ -36,6 +39,7 @@ cout << "运行时间: " << elapsed_seconds << " 秒" << endl;  //运行时间: 
 ```
 
 ## 概要
+
 ```C++
 
 #define NULL /* see description */
@@ -63,13 +67,16 @@ namespace std {
 }
 
 ```
+
 ### `Class std::timespec`
+
 ```C++
 struct timespec {
   [std::time_t](http://127.0.0.1:57856/c__/en.cppreference.com/w/cpp/chrono/c/time_t.html) tv_sec;
   long tv_nsec;
 };
 ```
+
 ### `Class std::tm`
 
 ```C++

@@ -1,15 +1,25 @@
 # GetMessageExtraInfo 函数 (winuser.h)
+
 ## 本文内容
+
 ## 语法
+
 ```C++
 LPARAM GetMessageExtraInfo();
 ```
+
 ## 返回值
+
 类型：LPARAM
+
 返回值指定额外信息。 额外信息的含义特定于设备。
+
 ## 注解
+
 若要设置线程的额外消息信息，请使用 [[SetMessageExtraInfo]] 函数。
+
 ## 示例代码
+
 ```C++
 #include <Windows.h>
 #include <iostream>
