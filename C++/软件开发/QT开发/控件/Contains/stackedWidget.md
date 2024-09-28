@@ -1,3 +1,9 @@
+---
+tags:
+  - QT开发
+---
+# stackedWidget
+
 `QStackedWidget` 是一个可以管理多个页面的控件，它通过堆叠的方式只显示一个页面。以下是 `QStackedWidget` 的详细函数方法及其作用：
 
 ### 1. **页面管理**

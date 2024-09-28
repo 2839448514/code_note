@@ -1,3 +1,9 @@
+---
+tags:
+  - QT开发
+---
+# quickWidget
+
 `QQuickWidget` 是 Qt 的一个组件，用于将 Qt Quick (QML) 界面嵌入到传统的 Qt Widgets 应用程序中。它允许将 QML 界面作为 `QWidget` 的子部件进行集成，并支持与 Qt Widgets 的交互。以下是 `QQuickWidget` 的详细函数方法及其作用：
 
 ### 1. **构造函数**

@@ -1,3 +1,9 @@
+---
+tags:
+  - QT开发
+---
+# axWidget
+
 `QAxWidget` 是 Qt 中用于嵌入和与 ActiveX 控件进行交互的控件。ActiveX 控件是由 Microsoft Windows 提供的一种软件组件，可以在 Windows 平台上用于实现各种功能。`QAxWidget` 允许 Qt 应用程序嵌入和操作这些控件。
 
 以下是 `QAxWidget` 的详细函数方法及其作用：

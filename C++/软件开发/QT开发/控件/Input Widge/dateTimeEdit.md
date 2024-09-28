@@ -1,3 +1,9 @@
+---
+tags:
+  - QT开发
+---
+# dateTimeEdit
+
 `QDateTimeEdit` 是 Qt 中用于输入和显示日期和时间的控件。它结合了日期和时间的功能，提供了许多自定义选项和功能。以下是 `QDateTimeEdit` 的详细函数方法及其作用：
 
 ### 1. **基本设置**

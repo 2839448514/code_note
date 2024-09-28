@@ -1,3 +1,7 @@
+---
+tags:
+  - win32
+---
 # sendInput 函数 (winuser.h)
 
 **合成键击、鼠标动作和按钮单击。**

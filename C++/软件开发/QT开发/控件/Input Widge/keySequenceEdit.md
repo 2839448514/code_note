@@ -1,3 +1,9 @@
+---
+tags:
+  - QT开发
+---
+# keySequenceEdit
+
 `QKeySequenceEdit` 是 Qt 提供的一个控件，用于让用户选择或编辑一个键盘快捷键（键序列）。以下是 `QKeySequenceEdit` 控件的详细函数方法及其作用：
 
 ### 1. **基本操作**

@@ -1,3 +1,9 @@
+---
+tags:
+  - QT开发
+---
+# fontComboBox
+
 `QFontComboBox` 是 Qt 中一个用于显示和选择字体的控件，它结合了 `QComboBox` 和字体选择的功能。以下是 `QFontComboBox` 的详细函数方法及其作用：
 
 ### 常用函数方法

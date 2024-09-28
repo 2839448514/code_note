@@ -1,3 +1,9 @@
+---
+tags:
+  - QT开发
+---
+# openGLWidget
+
 `QOpenGLWidget` 是 Qt 中用于集成 OpenGL 的绘图小部件。它提供了一系列方法来初始化 OpenGL 环境、绘制图形、处理 OpenGL 事件等。以下是 `QOpenGLWidget` 的详细函数方法及其作用：
 
 ### 1. **构造函数**

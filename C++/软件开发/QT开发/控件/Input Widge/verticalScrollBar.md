@@ -1,3 +1,9 @@
+---
+tags:
+  - QT开发
+---
+# verticalScrollBar
+
 `QScrollBar` 的 `verticalScrollBar` 类似于 `horizontalScrollBar`，但用于垂直方向上的滚动条。`QScrollBar` 控件在 Qt 中用于实现滚动功能，可以在 `QWidget` 的视图中添加水平或垂直的滚动条。以下是 `QScrollBar` 的详细方法和功能，主要涉及垂直滚动条的使用：
 
 ### 1. **基本设置**

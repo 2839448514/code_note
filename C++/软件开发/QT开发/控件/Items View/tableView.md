@@ -1,3 +1,9 @@
+---
+tags:
+  - QT开发
+---
+# tableView
+
 `QTableView` 是 Qt 框架中的一个控件，用于以表格形式展示和操作数据。它适用于展示表格数据，例如数据库表格、数据分析结果等。以下是 `QTableView` 的详细方法及其作用：
 
 ### 1. 基本构造与销毁
@@ -284,7 +290,6 @@ QAbstractItemDelegate *delegate = tableView->itemDelegate();
 
 - **作用**：设置当前选中的索引。
 - **参数**：
-
 
   - `index`：当前索引，类型为 `QModelIndex`。
 - **返回值**：`void`，无返回值。

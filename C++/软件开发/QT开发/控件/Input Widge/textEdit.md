@@ -1,3 +1,9 @@
+---
+tags:
+  - QT开发
+---
+# textEdit
+
 `QTextEdit` 是 Qt 中的一个富文本编辑控件，支持多种文本格式、样式和内容操作。以下是 `QTextEdit` 的详细函数方法及其作用：
 
 ### 常用函数方法
@@ -314,8 +320,6 @@ QTextDocument *doc = textEdit->document();
 ```
 
 #### `setDocument(QTextDocument *document)`
-
--
 
  **作用**：设置文本编辑器的文档对象。
 - **参数**：

@@ -1,3 +1,9 @@
+---
+tags:
+  - QT开发
+---
+# radioButton
+
 `QRadioButton` 是 Qt 中用于创建单选按钮的控件。以下是一些 `QRadioButton` 常用的函数方法及其作用：
 
 ### 常用函数方法

@@ -1,3 +1,9 @@
+---
+tags:
+  - CPP
+---
+# printf, fprintf, sprintf, snprintf, printf_s, fprintf_s, sprintf_s, snprintf_s
+
 | **int printf( const char *format, ... );**                                                                         | (1)     | **(until C99)** |
 | ------------------------------------------------------------------------------------------------------------------ | ------- | --------------- |
 | **int printf( const char *restrict format, ... );**                                                                | **(1)** | **(since C99)** |

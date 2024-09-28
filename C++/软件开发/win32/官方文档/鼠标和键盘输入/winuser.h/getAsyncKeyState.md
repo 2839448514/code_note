@@ -1,3 +1,7 @@
+---
+tags:
+  - win32
+---
 # getAsyncKeyState 函数 (winuser.h)
 
 确定调用函数时键是向上还是向下，以及上次调用 GetAsyncKeyState 后是否按下了该键。

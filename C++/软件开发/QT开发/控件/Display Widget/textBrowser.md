@@ -1,3 +1,9 @@
+---
+tags:
+  - QT开发
+---
+# textBrowser
+
 `QTextBrowser` 是 Qt 中用于显示富文本（HTML 格式）的控件。它不仅支持文本显示，还支持超链接、图片、富文本格式等。以下是 `QTextBrowser` 控件的详细函数方法及其作用：
 
 ### 1. **文本设置**

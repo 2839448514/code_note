@@ -1,3 +1,9 @@
+---
+tags:
+  - QT开发
+---
+# plainTextEdit
+
 `QPlainTextEdit` 是 Qt 中的一个轻量级文本编辑控件，主要用于处理纯文本。与 `QTextEdit` 不同的是，它不支持富文本格式和复杂的文本布局，但它适用于需要处理大量文本的应用程序。以下是 `QPlainTextEdit` 的详细函数方法及其作用：
 
 ### 1. **文本操作**

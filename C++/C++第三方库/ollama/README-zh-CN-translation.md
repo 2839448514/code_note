@@ -1,3 +1,9 @@
+---
+tags:
+  - 库文件
+---
+# README-zh-CN-translation
+
 ollama-hpp
 ==========
 
@@ -470,8 +476,8 @@ Ollama 由 Jeffrey Morgan （@jmorganca） 和 Ollama 团队制作，可在 MIT 
 
 该库是 Ollama API 的仅头文件 C++ 集成，提供对大多数 API 功能的访问，同时将它们与 std 库类或社区中流行的仅头文件库集成。使用以下外部库：
 
-*   **nlohmnann JSON** 是一种功能丰富的仅标头 C++ JSON 实现。该库由 Niels Lohmann 创建，可在 MIT 许可证下使用。有关更多详细信息，请访问：[https://github.com/nlohmann/json](https://github.com/nlohmann/json)
+* **nlohmnann JSON** 是一种功能丰富的仅标头 C++ JSON 实现。该库由 Niels Lohmann 创建，可在 MIT 许可证下使用。有关更多详细信息，请访问：[https://github.com/nlohmann/json](https://github.com/nlohmann/json)
 
-*   **httplib** 是一个仅限头文件的 C++ http/https 库。该库由 Yuji Hirose 创建，可在 MIT 许可证下使用。有关更多详细信息，请访问：[https://github.com/yhirose/cpp-httplib](https://github.com/yhirose/cpp-httplib)
+* **httplib** 是一个仅限头文件的 C++ http/https 库。该库由 Yuji Hirose 创建，可在 MIT 许可证下使用。有关更多详细信息，请访问：[https://github.com/yhirose/cpp-httplib](https://github.com/yhirose/cpp-httplib)
 
-*   **Base64.h** 是一个仅限头文件的 C++ 库，用于对 Base64 值进行编码和解码。该库由 tomykaira 创建，可在 MIT 许可证下使用。有关更多详细信息，请访问：[https://gist.github.com/tomykaira/f0fd86b6c73063283afe550bc5d77594](https://gist.github.com/tomykaira/f0fd86b6c73063283afe550bc5d77594)
+* **Base64.h** 是一个仅限头文件的 C++ 库，用于对 Base64 值进行编码和解码。该库由 tomykaira 创建，可在 MIT 许可证下使用。有关更多详细信息，请访问：[https://gist.github.com/tomykaira/f0fd86b6c73063283afe550bc5d77594](https://gist.github.com/tomykaira/f0fd86b6c73063283afe550bc5d77594)

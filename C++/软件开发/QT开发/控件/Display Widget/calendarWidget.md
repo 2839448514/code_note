@@ -1,3 +1,9 @@
+---
+tags:
+  - QT开发
+---
+# calendarWidget
+
 `QCalendarWidget` 是 Qt 框架中的一个控件，用于显示和操作日历。它提供了丰富的功能来管理日期选择和显示。以下是 `QCalendarWidget` 的详细函数方法及其作用：
 
 ### 1. **基本设置和初始化**

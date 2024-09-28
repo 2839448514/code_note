@@ -1,3 +1,7 @@
+---
+tags:
+  - win32
+---
 # HARDWAREINPUT 结构 (winuser.h)
 
 ## 语法

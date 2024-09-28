@@ -1,3 +1,9 @@
+---
+tags:
+  - QT开发
+---
+# treeWidget
+
 `QTreeWidget` 是 Qt 中一个用于显示和操作树形数据的控件，继承自 `QTreeView`。它提供了用于管理和操作树节点的功能。以下是 `QTreeWidget` 的详细函数方法及其作用：
 
 ### 1. 基本构造与销毁

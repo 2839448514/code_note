@@ -1,3 +1,9 @@
+---
+tags:
+  - QT开发
+---
+# 操作excel
+
 QXlsx 库提供了丰富的功能来处理 Excel 文件。以下是一些主要类及其常用函数的介绍：
 
 ### QXlsx::Document 类

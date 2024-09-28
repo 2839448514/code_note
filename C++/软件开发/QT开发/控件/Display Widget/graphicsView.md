@@ -1,3 +1,9 @@
+---
+tags:
+  - QT开发
+---
+# graphicsView
+
 `QGraphicsView` 是 Qt 中用于显示和管理 2D 图形项的控件。它与 `QGraphicsScene` 配合使用，允许在视图中绘制和操作图形项。以下是 `QGraphicsView` 控件的详细函数方法及其作用：
 
 ### 1. **场景管理**

@@ -1,3 +1,7 @@
+---
+tags:
+  - win32
+---
 # INPUT 结构体
 
 ```cpp

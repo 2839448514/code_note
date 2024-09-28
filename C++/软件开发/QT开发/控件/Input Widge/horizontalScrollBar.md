@@ -1,3 +1,9 @@
+---
+tags:
+  - QT开发
+---
+# horizontalScrollBar
+
 `QScrollBar` 是 Qt 中的一个控件，用于提供水平或垂直的滚动条。`QScrollBar` 控件的具体用法包括设置其范围、步进、当前值等。以下是 `QScrollBar` 的详细函数方法及其作用：
 
 ### 1. **基本设置**

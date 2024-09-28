@@ -278,12 +278,6 @@
       "id": "editing-toolbar:workplace-fullscreen-focus",
       "name": "workplace-Fullscreen ",
       "icon": "exit-fullscreen"
-    },
-    {
-      "id": "obsidian-mind-map:app:markmap-preview",
-      "name": "Mind Map: Preview the current note as a Mind Map",
-      "hotkeys": [],
-      "icon": "aperture"
     }
   ],
   "appendMethod": "workspace",
@@ -293,7 +287,7 @@
   "cMenuNumRows": 12,
   "cMenuWidth": 610,
   "cMenuFontColor": "#2DC26B",
-  "cMenuBackgroundColor": "#d3f8b6",
+  "cMenuBackgroundColor": "#d4b106",
   "autohide": false,
   "custom_bg1": "#FFB78B8C",
   "custom_bg2": "#CDF4698C",

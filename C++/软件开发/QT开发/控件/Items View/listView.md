@@ -1,3 +1,9 @@
+---
+tags:
+  - QT开发
+---
+# listView
+
 `QListView` 是 Qt 框架中的一个视图控件，用于显示列表形式的数据。它继承自 `QAbstractItemView`，并通过与 `QAbstractItemModel` 配合使用来显示数据。以下是 `QListView` 的详细函数方法及其作用：
 
 ### 1. 基本构造与销毁

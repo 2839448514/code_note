@@ -1,3 +1,9 @@
+---
+tags:
+  - QT开发
+---
+# comboBox
+
 `QComboBox` 是 Qt 中的一个下拉列表控件，允许用户从下拉菜单中选择一个选项。它结合了 `QPushButton` 和 `QListView` 的功能，可以显示一组可供选择的项。以下是 `QComboBox` 的详细函数方法及其作用：
 
 ### 常用函数方法
@@ -257,8 +263,6 @@ comboBox->setDuplicatesEnabled(false);
 ```
 
 ### 26. `duplicatesEnabled()`
-
--
 
  **作用**：检查是否允许重复项。
 - **返回值**：`bool`，如果允许重复项则返回 `true`，否则返回 `false`。

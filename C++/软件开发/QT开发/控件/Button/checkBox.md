@@ -1,3 +1,9 @@
+---
+tags:
+  - QT开发
+---
+# checkBox
+
 ### 常用函数方法
 
 ### 1. `setText(const QString &text)`

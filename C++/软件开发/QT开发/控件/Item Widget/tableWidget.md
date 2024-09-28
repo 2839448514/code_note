@@ -1,3 +1,9 @@
+---
+tags:
+  - QT开发
+---
+# tableWidget
+
 `QTableWidget` 是 Qt 中用于显示和操作表格数据的控件，继承自 `QTableView`。它提供了用于管理和操作表格的丰富功能。以下是 `QTableWidget` 的详细函数方法及其作用：
 
 ### 1. 基本构造与销毁

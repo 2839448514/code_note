@@ -1,3 +1,7 @@
+---
+tags:
+  - win32
+---
 # GetMessageExtraInfo 函数 (winuser.h)
 
 ## 本文内容

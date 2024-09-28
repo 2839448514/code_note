@@ -1,3 +1,7 @@
+---
+tags:
+  - win32
+---
 # KEYBDINPUT 结构 
 
 ## 语法

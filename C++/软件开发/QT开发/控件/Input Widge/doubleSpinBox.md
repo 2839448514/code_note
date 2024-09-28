@@ -1,3 +1,9 @@
+---
+tags:
+  - QT开发
+---
+# doubleSpinBox
+
 `QDoubleSpinBox` 是 Qt 中一个用于输入浮点数的控件，支持设置范围、步长、精度等。以下是 `QDoubleSpinBox` 的详细函数方法及其作用：
 
 ### 1. **基本设置**

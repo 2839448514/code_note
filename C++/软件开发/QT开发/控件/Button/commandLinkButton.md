@@ -1,3 +1,9 @@
+---
+tags:
+  - QT开发
+---
+# commandLinkButton
+
 `QCommandLinkButton` 是 Qt 中用于创建具有链接风格外观的按钮控件，通常用于提供一种类似于超链接的界面元素。以下是 `QCommandLinkButton` 常用的方法和函数及其作用：
 
 ### 常用函数方法

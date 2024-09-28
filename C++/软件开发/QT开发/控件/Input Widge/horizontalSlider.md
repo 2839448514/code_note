@@ -1,3 +1,9 @@
+---
+tags:
+  - QT开发
+---
+# horizontalSlider
+
 `QSlider` 控件用于实现滑块功能，可以在水平或垂直方向上使用。以下是 `QSlider` 控件中涉及的详细方法及其作用，主要针对 `horizontalSlider`：
 
 ### 1. **基本设置**

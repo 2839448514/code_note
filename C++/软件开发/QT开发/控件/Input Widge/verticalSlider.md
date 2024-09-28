@@ -1,3 +1,9 @@
+---
+tags:
+  - QT开发
+---
+# verticalSlider
+
 `QSlider` 控件的水平版本 (`horizontalSlider`) 和垂直版本 (`verticalSlider`) 在功能上是类似的，只是方向不同。下面是 `QSlider` 的垂直版本（`verticalSlider`）的详细方法和函数，以及它们的作用：
 
 ### 1. **基本设置**

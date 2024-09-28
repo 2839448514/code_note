@@ -1,3 +1,7 @@
+---
+tags:
+  - win32
+---
 # SetMessageExtraInfo 函数 (winuser.h)
 
 ## 语法
