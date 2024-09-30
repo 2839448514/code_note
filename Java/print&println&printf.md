@@ -1,3 +1,5 @@
+# print&println&printf
+
 在Java中，`print`、`printf`和`println`是用于输出文本到控制台的常用方法，它们都属于`PrintStream`类。尽管它们在功能上有些相似之处，但它们之间也存在一些关键的差异：
 
 1. **`print` 方法**：

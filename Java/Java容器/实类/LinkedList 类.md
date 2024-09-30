@@ -1,3 +1,9 @@
+---
+tags:
+  - Java
+---
+# LinkedList 类
+
 ## `LinkedList<E>` 类介绍
 
 #### 继承层次结构
@@ -280,4 +286,3 @@ public class LinkedList<E> extends AbstractSequentialList<E> implements List<E>,
      - **返回值**：包含列表元素的数组。
 
 ---
-

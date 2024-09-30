@@ -1,3 +1,9 @@
+---
+tags:
+  - Java
+---
+# ArrayList
+
 ### `ArrayList<E>` 类介绍
 
 #### 概述

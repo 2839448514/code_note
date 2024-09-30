@@ -1,3 +1,9 @@
+---
+tags:
+  - Java
+---
+# Iterator接口
+
 ## `Interface Iterator<E>`
 
 **`public interface Iterator<E>`**

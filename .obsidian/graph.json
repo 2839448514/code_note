@@ -1,7 +1,7 @@
 {
   "collapse-filter": false,
   "search": "",
-  "showTags": false,
+  "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": false,
@@ -15,13 +15,6 @@
       }
     },
     {
-      "query": "tag:#库文件  ",
-      "color": {
-        "a": 1,
-        "rgb": 14069084
-      }
-    },
-    {
       "query": "tag:#QT开发  ",
       "color": {
         "a": 1,
@@ -30,6 +23,13 @@
     },
     {
       "query": "tag:#win32  ",
+      "color": {
+        "a": 1,
+        "rgb": 6084188
+      }
+    },
+    {
+      "query": "tag:#Java  ",
       "color": {
         "a": 1,
         "rgb": 6084188
@@ -46,6 +46,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.7132754626224597,
+  "scale": 0.7132754626224602,
   "close": true
 }
