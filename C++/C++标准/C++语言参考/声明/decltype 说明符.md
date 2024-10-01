@@ -2,4 +2,5 @@
 tags:
   - CPP
 ---
-# basic_fstream
+
+# decltype 说明符

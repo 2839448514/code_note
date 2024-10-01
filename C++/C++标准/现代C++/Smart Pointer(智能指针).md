@@ -7,7 +7,7 @@ tags:
 
 ## `Smart Pointer`(智能指针)
 
-自C++11起，C++标准库提供两大类型的`smart pointer`:
+自C++11起，C++标准库提供两大[[类型]]的`smart pointer`:
 
 1. `Class shareed_ptr`实现共享式拥有(shared ownership) 概念。多个`smart pointer`可以指向相同指针，该对象和相关资源会在”最后一个`reference`被销毁”时释放。为了在结构复杂的情境中执行上述工作，标准库提供了`weak_ptr`、`bad_weak_ptr` 和 `enable_shared_from_this`等辅助类。
 

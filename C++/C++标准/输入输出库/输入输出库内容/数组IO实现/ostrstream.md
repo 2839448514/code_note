@@ -1,5 +1,0 @@
----
-tags:
-  - CPP
----
-# ostrstream

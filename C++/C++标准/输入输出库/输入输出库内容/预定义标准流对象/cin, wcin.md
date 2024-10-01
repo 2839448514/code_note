@@ -1,5 +1,0 @@
----
-tags:
-  - CPP
----
-# cin, wcin
