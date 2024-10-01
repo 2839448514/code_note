@@ -2,3 +2,5 @@
 tags:
   - CPP
 ---
+
+# C++ 关键词：register

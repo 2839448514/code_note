@@ -49,6 +49,7 @@ S S::s;       // 定义，完整类型
 ```
 
 **然而，若声明使用了 [[constexpr 说明符(C++11 起)|constexpr]] 或[[inline 说明符|inline]] (C++17 起) 说明符，则必须声明该成员为具有完整类型。**(C++11 起)
+
 ### 注解
 
 当应用于多态类型的表达式时，`typeid` 表达式的求值可能涉及运行时开销（虚表查找），其他情况下 `typeid` 表达式都在编译时解决。
@@ -67,6 +68,7 @@ assert(std::type_index(ti1) == std::type_index(ti2)); // 保证
 ```
 
 ## 示例
+
 ```C++
 #include <iostream>
 #include <string>
@@ -118,6 +120,7 @@ int main() {
 ```
 
 输出
+
 ```c++
 myint has type: int
 mystr has type: std::basic_string<char, std::char_traits<char>, std::allocator<char> >
