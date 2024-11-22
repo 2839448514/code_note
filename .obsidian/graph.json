@@ -15,20 +15,6 @@
       }
     },
     {
-      "query": "tag:#QT开发  ",
-      "color": {
-        "a": 1,
-        "rgb": 11392604
-      }
-    },
-    {
-      "query": "tag:#win32  ",
-      "color": {
-        "a": 1,
-        "rgb": 6084188
-      }
-    },
-    {
       "query": "tag:#Java  ",
       "color": {
         "a": 1,
@@ -46,6 +32,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.7514342322277581,
+  "scale": 0.7514342322277588,
   "close": true
 }

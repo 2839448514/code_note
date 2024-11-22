@@ -18,7 +18,7 @@ UINT SendInput(
 
 ## 参数
 
-- **`[in] cInputs`**：_pInputs_ 数组中的结构数。
+- **`[in] cInputs`**：`_pInputs_` 数组中的结构数。
 - **`[in] pInputs`**：[[INPUT]] 结构的数组。 每个结构都表示要插入键盘或鼠标输入流的事件。
 - **`[in] cbSize`**：[[INPUT]] 结构的大小（以字节为单位）。 如果 _cbSize_ 不是 **INPUT** 结构的大小，则函数将失败。
 
